@@ -1,0 +1,17 @@
+.modal-fullscreen {
+  min-height: 100%;
+  margin: 0;
+}
+
+.modal-fullscreen .modal-content {
+  min-height: 100%;
+  border: none; /* Optional: Remove border */
+  border-radius: 0; /* Optional: Remove border radius */
+}
+
+.modal-fullscreen .modal-dialog {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

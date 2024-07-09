@@ -1,0 +1,13 @@
+.sidebar {
+  background: rgb(39, 66, 95);
+}
+.sidebar hr {
+  background: white;
+  width: 100%;
+  height: 2px;
+}
+.sidebar .side-link:hover {
+    background-color: rgb(79, 120, 178);
+    border-radius: 6px;
+  
+}
