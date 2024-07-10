@@ -10,4 +10,10 @@ a {
 }
 .App {
   overflow-x: hidden;
+  
+}
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    display: none;
+  }
 }

@@ -12,13 +12,13 @@ const Sidebar = () => {
       <div className="sidebar-heading text-center mb-4 fs-3">نمار</div>
       <hr className="bg-white" />
       <Nav className="flex-column">
-        <Nav.Link href="/" className="mb-3 text-white fs-4  side-link">
+        <Nav.Link  className="mb-3 text-white fs-4  side-link">
           مشتريات
         </Nav.Link>
-        <Nav.Link href="/" className="mb-3 text-white side-link">
+        <Nav.Link  className="mb-3 text-white side-link">
           طلبات الشراء
         </Nav.Link>
-        <Nav.Link href="/" className="mb-3 text-white side-link">
+        <Nav.Link  className="mb-3 text-white side-link">
           فواتير الشراء
         </Nav.Link>
       </Nav>

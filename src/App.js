@@ -10,10 +10,10 @@ function App() {
       <Header />
 
       <Row>
-        <Col xs={2} id="sidebar-wrapper">
+        <Col md={2}  id="sidebar-wrapper">
           <Sidebar />
         </Col>
-        <Col xs={10} id="page-content-wrapper">
+        <Col md={10} sm={12} id="page-content-wrapper">
           <DataTable />
         </Col>
       </Row>

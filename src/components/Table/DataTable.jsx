@@ -7,6 +7,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 
 import Model from '../Model/Model';
+import "./Table.css"
 
 const DataTable = () => {
   const [customerData, setCustomerData] = useState([]);
@@ -92,7 +93,7 @@ const DataTable = () => {
           </tbody>
         </Table>
       </div>
-      <div className="pagination d-flex justify-content-center w-100 align-items-center ">
+      <div className="pagination d-flex justify-content-center gap-2 w-100 align-items-center mb-5">
         <Pagination>
           <Pagination.Prev
             onClick={() => handlePageClick(currentPage - 1)}
