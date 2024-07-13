@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Button, Form, Modal, Col, Row, Container } from "react-bootstrap";
-
-import "./Model.css";
-import Formgroup from "./Formgroup";
+import { Button, Modal, Container } from "react-bootstrap";
+import Formgroup from "./Formgroup"; // Assuming this is correctly imported
 
 function Model() {
   const [show, setShow] = useState(false);
@@ -33,18 +31,18 @@ function Model() {
             </div>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body
-          style={{ maxHeight: "calc(100vh - 210px)", overflowY: "auto" }}
-        >
+        <Modal.Body style={{ maxHeight: "100vh", overflowY: "auto" }}>
           <Container className="gap-y">
-            <Formgroup/>
+            <Formgroup /> {/* Renders the Formgroup component */}
           </Container>
         </Modal.Body>
         <Modal.Footer className="d-flex justify-content-center w-100 align-items-center">
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="danger" onClick={handleClose}>
             أغلاق
           </Button>
-          
+          <Button variant="secondary" onClick={handleClose}>
+            حفظ 
+          </Button>
         </Modal.Footer>
       </Modal>
     </>
