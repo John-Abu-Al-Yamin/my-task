@@ -231,13 +231,13 @@ const ModelButton = () => {
         </tbody>
       </Table>
       <div className="d-flex justify-content-start mt-3">
-        <Button variant="success" onClick={handleCopyRow}>
-          <FaPlus className="me-1" /> إضافة صف جديد
+        <Button className="my-3" variant="success" onClick={handleCopyRow}>
+          <FaPlus className="me-1" />
         </Button>
       </div>
       <div className="forms-group">
         <Form.Group controlId="issueDate">
-          <Form.Label>تاريخ الإصدار:</Form.Label>
+          <Form.Label> الخصم علي اجمالي الفاتوره</Form.Label>
           <Form.Control
             style={{ width: "300px" }}
             type="text"
@@ -248,40 +248,40 @@ const ModelButton = () => {
         <Form>
           <Row className="mb-3">
             <Form.Group as={Col} xl={4} md={12} controlId="issueDate">
-              <Form.Label>تاريخ الإصدار:</Form.Label>
+              <Form.Label> الاجمالي قبل الخصم</Form.Label>
               <Form.Control type="text" name="issueDate" required />
             </Form.Group>
 
             <Form.Group as={Col} xl={4} md={12} controlId="phoneNumber">
-              <Form.Label>رقم الهاتف:</Form.Label>
+              <Form.Label> مبلغ الضريبه</Form.Label>
               <Form.Control type="text" name="phoneNumber" required />
             </Form.Group>
 
             <Form.Group as={Col} xl={4} md={12} controlId="phoneNumber">
-              <Form.Label>رقم الهاتف:</Form.Label>
+              <Form.Label>الاجمالي بعد الضريبه</Form.Label>
               <Form.Control type="text" name="phoneNumber" required />
             </Form.Group>
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} xl={4} md={12} controlId="issueDate">
-              <Form.Label>تاريخ الإصدار:</Form.Label>
+              <Form.Label> الخصم علي الاصناف</Form.Label>
               <Form.Control type="number" name="issueDate" required />
             </Form.Group>
 
             <Form.Group as={Col} xl={4} md={12} controlId="phoneNumber">
-              <Form.Label>رقم الهاتف:</Form.Label>
+              <Form.Label> المبلغ المسدد</Form.Label>
               <Form.Control type="number" name="phoneNumber" required />
             </Form.Group>
 
             <Form.Group as={Col} xl={4} md={12} controlId="phoneNumber">
-              <Form.Label>رقم الهاتف:</Form.Label>
+              <Form.Label> المبلغ المتبقي</Form.Label>
               <Form.Control type="number" name="phoneNumber" required />
             </Form.Group>
           </Row>
         </Form>
       </div>
       <div className="butto">
-        <Buttons/>
+        <Buttons />
       </div>
     </div>
   );
